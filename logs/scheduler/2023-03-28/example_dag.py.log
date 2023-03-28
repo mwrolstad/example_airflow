@@ -384,3 +384,24 @@ TypeError: __init__() got an unexpected keyword argument 'schedule'
 [2023-03-28 23:11:33,136] {logging_mixin.py:104} INFO - [2023-03-28 23:11:33,135] {dag.py:1818} INFO - Sync 1 DAGs
 [2023-03-28 23:11:33,195] {logging_mixin.py:104} INFO - [2023-03-28 23:11:33,195] {dag.py:2273} INFO - Setting next_dagrun for my_dag to 2023-03-28 06:00:00+00:00
 [2023-03-28 23:11:33,213] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/example_dag.py took 0.175 seconds
+[2023-03-28 23:12:03,657] {scheduler_job.py:182} INFO - Started process (PID=1583) to work on /opt/airflow/dags/example_dag.py
+[2023-03-28 23:12:03,661] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2023-03-28 23:12:03,663] {logging_mixin.py:104} INFO - [2023-03-28 23:12:03,663] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2023-03-28 23:12:03,702] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/example_dag.py
+[2023-03-28 23:12:03,749] {logging_mixin.py:104} INFO - [2023-03-28 23:12:03,749] {dag.py:1818} INFO - Sync 1 DAGs
+[2023-03-28 23:12:03,810] {logging_mixin.py:104} INFO - [2023-03-28 23:12:03,810] {dag.py:2273} INFO - Setting next_dagrun for my_dag to 2023-03-28 06:00:00+00:00
+[2023-03-28 23:12:03,831] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/example_dag.py took 0.180 seconds
+[2023-03-28 23:12:34,080] {scheduler_job.py:182} INFO - Started process (PID=1637) to work on /opt/airflow/dags/example_dag.py
+[2023-03-28 23:12:34,083] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2023-03-28 23:12:34,086] {logging_mixin.py:104} INFO - [2023-03-28 23:12:34,085] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2023-03-28 23:12:34,135] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/example_dag.py
+[2023-03-28 23:12:34,191] {logging_mixin.py:104} INFO - [2023-03-28 23:12:34,190] {dag.py:1818} INFO - Sync 1 DAGs
+[2023-03-28 23:12:34,254] {logging_mixin.py:104} INFO - [2023-03-28 23:12:34,254] {dag.py:2273} INFO - Setting next_dagrun for my_dag to 2023-03-28 06:00:00+00:00
+[2023-03-28 23:12:34,273] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/example_dag.py took 0.200 seconds
+[2023-03-28 23:13:05,114] {scheduler_job.py:182} INFO - Started process (PID=1693) to work on /opt/airflow/dags/example_dag.py
+[2023-03-28 23:13:05,117] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2023-03-28 23:13:05,120] {logging_mixin.py:104} INFO - [2023-03-28 23:13:05,119] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2023-03-28 23:13:05,162] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /opt/airflow/dags/example_dag.py
+[2023-03-28 23:13:05,214] {logging_mixin.py:104} INFO - [2023-03-28 23:13:05,214] {dag.py:1818} INFO - Sync 1 DAGs
+[2023-03-28 23:13:05,280] {logging_mixin.py:104} INFO - [2023-03-28 23:13:05,279] {dag.py:2273} INFO - Setting next_dagrun for my_dag to 2023-03-28 06:00:00+00:00
+[2023-03-28 23:13:05,295] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/example_dag.py took 0.189 seconds

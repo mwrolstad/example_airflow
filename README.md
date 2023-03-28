@@ -11,7 +11,8 @@ Once that's done, you can pop into the new project you just downloaded and run t
 - `docker-compose up airflow-init`: this creates the airflow environment for you
 - `docker-compose up`: this basically boots a local version of Airflow for you, it may take a few minutes to load.
 - Once that is complete, you may see a login page at http://localhost:8080/, the default username and password are `airflow` and `airflow`
-- The DAG `my_dag` should be visible to you, and you should be able to run it! 
+- The DAG `my_dag` should be visible to you, and you should be able to run it!
+- Just open it up and press the "play" button in the upper right corner.
 
 The full walkthrough is here: https://betterprogramming.pub/how-to-start-running-apache-airflow-in-docker-6567d8165653
 
