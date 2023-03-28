@@ -1,0 +1,37 @@
+[2023-03-28 23:10:08,695] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: my_dag.executing_python_task_example 2023-03-28T23:05:19.674253+00:00 [queued]>
+[2023-03-28 23:10:08,738] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: my_dag.executing_python_task_example 2023-03-28T23:05:19.674253+00:00 [queued]>
+[2023-03-28 23:10:08,739] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28 23:10:08,740] {taskinstance.py:1043} INFO - Starting attempt 2 of 5
+[2023-03-28 23:10:08,742] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28 23:10:08,769] {taskinstance.py:1063} INFO - Executing <Task(BashOperator): executing_python_task_example> on 2023-03-28T23:05:19.674253+00:00
+[2023-03-28 23:10:08,815] {standard_task_runner.py:52} INFO - Started process 109 to run task
+[2023-03-28 23:10:08,827] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'my_dag', 'executing_python_task_example', '2023-03-28T23:05:19.674253+00:00', '--job-id', '7', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/example_dag.py', '--cfg-path', '/tmp/tmpnlrzxbnm', '--error-file', '/tmp/tmpoeh7s2q2']
+[2023-03-28 23:10:08,829] {standard_task_runner.py:77} INFO - Job 7: Subtask executing_python_task_example
+[2023-03-28 23:10:08,938] {logging_mixin.py:104} INFO - Running <TaskInstance: my_dag.executing_python_task_example 2023-03-28T23:05:19.674253+00:00 [running]> on host febd3e78ce03
+[2023-03-28 23:10:09,060] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=team_name
+AIRFLOW_CTX_DAG_ID=my_dag
+AIRFLOW_CTX_TASK_ID=executing_python_task_example
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-28T23:05:19.674253+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-28T23:05:19.674253+00:00
+[2023-03-28 23:10:09,063] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2023-03-28 23:10:09,069] {bash.py:158} INFO - Running command: python3 plugins/example_python.py
+[2023-03-28 23:10:09,094] {bash.py:169} INFO - Output:
+[2023-03-28 23:10:09,473] {bash.py:173} INFO - python3: can't open file 'plugins/example_python.py': [Errno 2] No such file or directory
+[2023-03-28 23:10:09,478] {bash.py:177} INFO - Command exited with return code 2
+[2023-03-28 23:10:09,508] {taskinstance.py:1455} ERROR - Bash command failed. The command returned a non-zero exit code.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/bash.py", line 180, in execute
+    raise AirflowException('Bash command failed. The command returned a non-zero exit code.')
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code.
+[2023-03-28 23:10:09,517] {taskinstance.py:1503} INFO - Marking task as UP_FOR_RETRY. dag_id=my_dag, task_id=executing_python_task_example, execution_date=20230328T230519, start_date=20230328T231008, end_date=20230328T231009
+[2023-03-28 23:10:09,625] {local_task_job.py:146} INFO - Task exited with return code 1

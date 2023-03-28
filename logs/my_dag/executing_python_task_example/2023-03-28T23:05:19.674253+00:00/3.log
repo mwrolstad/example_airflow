@@ -1,0 +1,126 @@
+[2023-03-28 23:11:08,429] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: my_dag.executing_python_task_example 2023-03-28T23:05:19.674253+00:00 [queued]>
+[2023-03-28 23:11:08,472] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: my_dag.executing_python_task_example 2023-03-28T23:05:19.674253+00:00 [queued]>
+[2023-03-28 23:11:08,474] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28 23:11:08,475] {taskinstance.py:1043} INFO - Starting attempt 3 of 6
+[2023-03-28 23:11:08,476] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-28 23:11:08,503] {taskinstance.py:1063} INFO - Executing <Task(BashOperator): executing_python_task_example> on 2023-03-28T23:05:19.674253+00:00
+[2023-03-28 23:11:08,509] {standard_task_runner.py:52} INFO - Started process 117 to run task
+[2023-03-28 23:11:08,521] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'my_dag', 'executing_python_task_example', '2023-03-28T23:05:19.674253+00:00', '--job-id', '8', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/example_dag.py', '--cfg-path', '/tmp/tmpgk5exqom', '--error-file', '/tmp/tmp4wzs7k95']
+[2023-03-28 23:11:08,522] {standard_task_runner.py:77} INFO - Job 8: Subtask executing_python_task_example
+[2023-03-28 23:11:08,628] {logging_mixin.py:104} INFO - Running <TaskInstance: my_dag.executing_python_task_example 2023-03-28T23:05:19.674253+00:00 [running]> on host febd3e78ce03
+[2023-03-28 23:11:08,708] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=team_name
+AIRFLOW_CTX_DAG_ID=my_dag
+AIRFLOW_CTX_TASK_ID=executing_python_task_example
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-28T23:05:19.674253+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-28T23:05:19.674253+00:00
+[2023-03-28 23:11:08,710] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2023-03-28 23:11:08,713] {bash.py:158} INFO - Running command: python3 /opt/airflow/plugins/example_python.py
+[2023-03-28 23:11:08,728] {bash.py:169} INFO - Output:
+[2023-03-28 23:11:09,090] {bash.py:173} INFO - Let's countdown from 1 to 99:
+[2023-03-28 23:11:09,092] {bash.py:173} INFO - 1
+[2023-03-28 23:11:09,093] {bash.py:173} INFO - 2
+[2023-03-28 23:11:09,093] {bash.py:173} INFO - 3
+[2023-03-28 23:11:09,094] {bash.py:173} INFO - 4
+[2023-03-28 23:11:09,095] {bash.py:173} INFO - 5
+[2023-03-28 23:11:09,095] {bash.py:173} INFO - 6
+[2023-03-28 23:11:09,096] {bash.py:173} INFO - 7
+[2023-03-28 23:11:09,097] {bash.py:173} INFO - 8
+[2023-03-28 23:11:09,097] {bash.py:173} INFO - 9
+[2023-03-28 23:11:09,098] {bash.py:173} INFO - 10
+[2023-03-28 23:11:09,100] {bash.py:173} INFO - 11
+[2023-03-28 23:11:09,101] {bash.py:173} INFO - 12
+[2023-03-28 23:11:09,102] {bash.py:173} INFO - 13
+[2023-03-28 23:11:09,103] {bash.py:173} INFO - 14
+[2023-03-28 23:11:09,105] {bash.py:173} INFO - 15
+[2023-03-28 23:11:09,108] {bash.py:173} INFO - 16
+[2023-03-28 23:11:09,109] {bash.py:173} INFO - 17
+[2023-03-28 23:11:09,110] {bash.py:173} INFO - 18
+[2023-03-28 23:11:09,111] {bash.py:173} INFO - 19
+[2023-03-28 23:11:09,112] {bash.py:173} INFO - 20
+[2023-03-28 23:11:09,112] {bash.py:173} INFO - 21
+[2023-03-28 23:11:09,113] {bash.py:173} INFO - 22
+[2023-03-28 23:11:09,114] {bash.py:173} INFO - 23
+[2023-03-28 23:11:09,114] {bash.py:173} INFO - 24
+[2023-03-28 23:11:09,115] {bash.py:173} INFO - 25
+[2023-03-28 23:11:09,116] {bash.py:173} INFO - 26
+[2023-03-28 23:11:09,116] {bash.py:173} INFO - 27
+[2023-03-28 23:11:09,117] {bash.py:173} INFO - 28
+[2023-03-28 23:11:09,118] {bash.py:173} INFO - 29
+[2023-03-28 23:11:09,118] {bash.py:173} INFO - 30
+[2023-03-28 23:11:09,119] {bash.py:173} INFO - 31
+[2023-03-28 23:11:09,120] {bash.py:173} INFO - 32
+[2023-03-28 23:11:09,120] {bash.py:173} INFO - 33
+[2023-03-28 23:11:09,121] {bash.py:173} INFO - 34
+[2023-03-28 23:11:09,122] {bash.py:173} INFO - 35
+[2023-03-28 23:11:09,123] {bash.py:173} INFO - 36
+[2023-03-28 23:11:09,124] {bash.py:173} INFO - 37
+[2023-03-28 23:11:09,125] {bash.py:173} INFO - 38
+[2023-03-28 23:11:09,127] {bash.py:173} INFO - 39
+[2023-03-28 23:11:09,128] {bash.py:173} INFO - 40
+[2023-03-28 23:11:09,129] {bash.py:173} INFO - 41
+[2023-03-28 23:11:09,130] {bash.py:173} INFO - 42
+[2023-03-28 23:11:09,132] {bash.py:173} INFO - 43
+[2023-03-28 23:11:09,133] {bash.py:173} INFO - 44
+[2023-03-28 23:11:09,134] {bash.py:173} INFO - 45
+[2023-03-28 23:11:09,135] {bash.py:173} INFO - 46
+[2023-03-28 23:11:09,136] {bash.py:173} INFO - 47
+[2023-03-28 23:11:09,139] {bash.py:173} INFO - 48
+[2023-03-28 23:11:09,142] {bash.py:173} INFO - 49
+[2023-03-28 23:11:09,145] {bash.py:173} INFO - 50
+[2023-03-28 23:11:09,146] {bash.py:173} INFO - 51
+[2023-03-28 23:11:09,147] {bash.py:173} INFO - 52
+[2023-03-28 23:11:09,148] {bash.py:173} INFO - 53
+[2023-03-28 23:11:09,148] {bash.py:173} INFO - 54
+[2023-03-28 23:11:09,149] {bash.py:173} INFO - 55
+[2023-03-28 23:11:09,150] {bash.py:173} INFO - 56
+[2023-03-28 23:11:09,151] {bash.py:173} INFO - 57
+[2023-03-28 23:11:09,151] {bash.py:173} INFO - 58
+[2023-03-28 23:11:09,152] {bash.py:173} INFO - 59
+[2023-03-28 23:11:09,153] {bash.py:173} INFO - 60
+[2023-03-28 23:11:09,153] {bash.py:173} INFO - 61
+[2023-03-28 23:11:09,155] {bash.py:173} INFO - 62
+[2023-03-28 23:11:09,156] {bash.py:173} INFO - 63
+[2023-03-28 23:11:09,157] {bash.py:173} INFO - 64
+[2023-03-28 23:11:09,158] {bash.py:173} INFO - 65
+[2023-03-28 23:11:09,159] {bash.py:173} INFO - 66
+[2023-03-28 23:11:09,159] {bash.py:173} INFO - 67
+[2023-03-28 23:11:09,160] {bash.py:173} INFO - 68
+[2023-03-28 23:11:09,161] {bash.py:173} INFO - 69
+[2023-03-28 23:11:09,161] {bash.py:173} INFO - 70
+[2023-03-28 23:11:09,162] {bash.py:173} INFO - 71
+[2023-03-28 23:11:09,162] {bash.py:173} INFO - 72
+[2023-03-28 23:11:09,163] {bash.py:173} INFO - 73
+[2023-03-28 23:11:09,164] {bash.py:173} INFO - 74
+[2023-03-28 23:11:09,164] {bash.py:173} INFO - 75
+[2023-03-28 23:11:09,165] {bash.py:173} INFO - 76
+[2023-03-28 23:11:09,166] {bash.py:173} INFO - 77
+[2023-03-28 23:11:09,166] {bash.py:173} INFO - 78
+[2023-03-28 23:11:09,167] {bash.py:173} INFO - 79
+[2023-03-28 23:11:09,167] {bash.py:173} INFO - 80
+[2023-03-28 23:11:09,168] {bash.py:173} INFO - 81
+[2023-03-28 23:11:09,169] {bash.py:173} INFO - 82
+[2023-03-28 23:11:09,169] {bash.py:173} INFO - 83
+[2023-03-28 23:11:09,170] {bash.py:173} INFO - 84
+[2023-03-28 23:11:09,170] {bash.py:173} INFO - 85
+[2023-03-28 23:11:09,171] {bash.py:173} INFO - 86
+[2023-03-28 23:11:09,172] {bash.py:173} INFO - 87
+[2023-03-28 23:11:09,172] {bash.py:173} INFO - 88
+[2023-03-28 23:11:09,173] {bash.py:173} INFO - 89
+[2023-03-28 23:11:09,173] {bash.py:173} INFO - 90
+[2023-03-28 23:11:09,174] {bash.py:173} INFO - 91
+[2023-03-28 23:11:09,175] {bash.py:173} INFO - 92
+[2023-03-28 23:11:09,175] {bash.py:173} INFO - 93
+[2023-03-28 23:11:09,176] {bash.py:173} INFO - 94
+[2023-03-28 23:11:09,177] {bash.py:173} INFO - 95
+[2023-03-28 23:11:09,178] {bash.py:173} INFO - 96
+[2023-03-28 23:11:09,178] {bash.py:173} INFO - 97
+[2023-03-28 23:11:09,179] {bash.py:173} INFO - 98
+[2023-03-28 23:11:09,180] {bash.py:173} INFO - 99
+[2023-03-28 23:11:09,181] {bash.py:177} INFO - Command exited with return code 0
+[2023-03-28 23:11:09,239] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=my_dag, task_id=executing_python_task_example, execution_date=20230328T230519, start_date=20230328T231108, end_date=20230328T231109
+[2023-03-28 23:11:09,295] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-28 23:11:09,309] {local_task_job.py:146} INFO - Task exited with return code 0
